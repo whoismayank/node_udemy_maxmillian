@@ -1,0 +1,23 @@
+{
+  "name": "node_udemy_maxmillian",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoismayank/node_udemy_maxmillian.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whoismayank/node_udemy_maxmillian/issues"
+  },
+  "homepage": "https://github.com/whoismayank/node_udemy_maxmillian#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
