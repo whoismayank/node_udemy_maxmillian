@@ -1,20 +1,16 @@
-const path = require('path');
 const express = require('express');
-const fs = require('fs')
-
+const appRootPath = require('../util/path');
+const path = require('path');
 const router = express.Router();
 
-// to show form on the front
-router.use('/add-product',(req, res, next)=>{
-    console.log('This is the first middle ware.');
-    res.sendFile(path.join(__dirname,'../','views','add-product.html'));
-});
+router.get('/add-product',(req, res) => {
+        // res.sendFile(path.join(__dirname,'../','views','add-product.html'));
+        res.sendFile(path.join(appRootPath, 'views', 'add-product.html'));
+    })
 
-// to get form data 
-router.post('/product', function (req, res) {
-    console.log(req.body);
-    res.redirect('/');
-});
-    
+
+router.post('/product',(req,res)=>{
+    res.send(req.body);
+})
 
 module.exports = router;
